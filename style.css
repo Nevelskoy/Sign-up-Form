@@ -81,9 +81,29 @@ input {
   width: 100%;
 }
 
+.form-control.error input {
+  border-color: hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
+}
+
+.form-control.error input::placeholder {
+  color: hsl(0, 100%, 74%);
+}
+
 input:focus {
   border: 2px solid hsl(248, 32%, 49%);
   outline: none;
+}
+
+.form-control img {
+  opacity: 0;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.form-control.error img {
+  opacity: 1;
 }
 
 button {
@@ -110,6 +130,10 @@ button:focus {
 button:active {
   box-shadow: 0 0 hsl(154, 59%, 40%);
   transform:  translate(2px);
+}
+
+.form-control.error small {
+  opacity: 1;
 }
 
 small {
