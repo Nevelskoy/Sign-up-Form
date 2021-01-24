@@ -9,7 +9,6 @@ body {
   background-image: url('./images/bg-intro-desktop.png');
   color: #fff;
   font-family: 'Poppins', sans-serif;
-  overflow: hidden;
 }
 
 .container {
@@ -21,7 +20,6 @@ body {
   margin: 0 auto;
   padding: 20px;
   min-height: 100vh;
-  padding: 20px;
 }
 
 .container > div {
@@ -63,8 +61,10 @@ p {
 }
 
 .form-control small {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
   position: absolute;
-  bottom: -20px;
+  bottom: -23px;
   right: 0;
   opacity: 0;
   text-align: right;
@@ -124,4 +124,22 @@ small a {
   color: hsl(0, 100%, 74%);
   font-weight: 600;
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+.attribution {
+  text-align: center;
 }
